@@ -1,0 +1,40 @@
+header {
+  height: 110px;
+  background-color: $red;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    height: 200px;
+  }
+
+  nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    li {
+      list-style: none;
+    }
+  }
+}
+
+.phone-cart-wrapper {
+  justify-self: right;
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone-numbers {
+  display: grid;
+  align-self: center;
+  a {
+    display: block;
+    color: white;
+  }
+}

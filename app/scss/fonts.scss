@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'RussianRoadSign';
+  src: url('../fonts/RussianRoadSign.otf');
+}
+@font-face {
+  font-family: 'Freehand';
+  src: url('../fonts/Freehand.ttf');
+}
+@font-face {
+  font-family: 'Tengri';
+  src: url('../fonts/Tengri.otf');
+}
+$Freehand: Freehand;
+$Tengri: Tengri;
+$RussianRoadSign: RussianRoadSign;

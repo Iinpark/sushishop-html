@@ -1,0 +1,115 @@
+.cart {
+  width: 80%;
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, minmax(350px, 2fr));
+  grid-template-rows: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-areas:
+    'item item check'
+    'item item check'
+    'item item check';
+
+  .product-items {
+    grid-area: item;
+  }
+  .product-item {
+    height: 240px;
+
+    margin: 10px;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+    .item-information {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 15px 0px;
+      h2 {
+        height: 50%;
+        width: 100%;
+        font-family: $Freehand, sans-serif;
+        color: $red;
+        font-size: 3em;
+      }
+      .price_and_controls {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50%;
+        span {
+          font-size: 1.5em;
+        }
+        input[value] {
+          font-size: 2em;
+          color: $red;
+        }
+        input {
+          border: none;
+          margin: 10px;
+          height: 50px;
+          width: 50px;
+          background-color: white;
+        }
+      }
+    }
+  }
+  .checkout {
+    grid-area: check;
+
+    margin-top: 10px;
+    height: 500px;
+    position: sticky;
+    top: 10px;
+    .checkboxes {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      p {
+        display: inline;
+        margin: 5px;
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      input {
+        width: 90%;
+        height: 40px;
+        margin: 15px 0;
+        padding: 5px;
+        border-radius: 10px;
+        border: none;
+        background-color: #e8e8e8;
+      }
+      input[type='radio'] {
+        width: unset;
+        height: unset;
+      }
+      input[type='button'] {
+        //background-color: $red;
+        background: center center no-repeat;
+        background-image: url('../img/button_bg.png');
+        background-size: contain;
+        height: 80px;
+        color: white;
+      }
+      input[type='button']:active {
+        filter: brightness(0.8);
+      }
+      input::placeholder {
+        color: white;
+        text-align: center;
+      }
+    }
+  }
+}

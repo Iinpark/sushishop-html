@@ -1,0 +1,23 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 160px;
+  background: $red;
+  color: white;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  address {
+    display: flex;
+    align-items: center;
+  }
+}
+.sign {
+  // height: 20px;
+  font-family: Consolas, monospace;
+  align-self: flex-end;
+}
