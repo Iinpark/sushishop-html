@@ -1,0 +1,17 @@
+.banner {
+  background-image: url(../img/banner.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  height: 660px;
+  display: flex;
+
+  h1 {
+    font-family: $Freehand, sans-serif;
+    color: $red;
+    font-size: 7em;
+    line-height: 0.9;
+    display: inline-block;
+    align-self: center;
+    padding-left: 50px;
+  }
+}
