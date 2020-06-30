@@ -6,8 +6,20 @@
 @import 'cart';
 @import 'banner';
 
-
 .main-container {
   margin: auto;
+}
+.background-wrapper {
+  background-image: url(../img/main-background.png);
+}
+.large-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
 
+.small-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
 }
