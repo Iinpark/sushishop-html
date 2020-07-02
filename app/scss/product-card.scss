@@ -1,6 +1,5 @@
 .product-card-large {
   display: inline-block;
-  height: 400px;
   max-width: 30vw;
   display: grid;
   margin: 10px auto;
@@ -23,7 +22,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    //max-height: 33%;
     span {
       font-size: 1.5rem;
     }
@@ -34,18 +32,18 @@
     input {
       border: none;
       margin: 0 10px;
-      //height: 30px;
-      //width:  30px;
+      background-color: white;
     }
   }
 }
 
 .product-card-small {
-  height: 375px;
-  width: 16vw;
+  //height: 375px;
+  //width: 16vw;
   display: grid;
-  margin: 10px auto;
+  //margin: 10px auto;
   grid-auto-flow: row;
+  background-color: #fff;
   box-shadow: 0px 4px 9px 2px rgba(0, 0, 0, 0.27);
   img {
     width: 95%;
@@ -71,7 +69,8 @@
     }
     input {
       border: none;
-      margin: 10px;
+      padding: 10px;
+      background-color: white;
     }
   }
 }
