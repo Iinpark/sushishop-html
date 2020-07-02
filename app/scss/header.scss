@@ -37,4 +37,42 @@ header {
     display: block;
     color: white;
   }
+  // display: none;
+}
+.phone-numbers-mobile-wrapper {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .phone-numbers {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .phone-numbers-mobile-wrapper {
+    display: block;
+    .phone-numbers-mobile {
+      //display: none;
+      display: grid;
+      align-self: center;
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas: 'number arrow';
+      a {
+        grid-area: number;
+        display: block;
+        color: white;
+      }
+      img {
+        grid-area: arrow;
+      }
+    }
+
+    .phone-secondary {
+      display: none;
+    }
+    .phone-secondary.open {
+      display: block;
+    }
+  }
 }

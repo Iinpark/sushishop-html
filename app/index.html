@@ -14,7 +14,9 @@
     <!-- CUSTOM HTML -->
 
     <header>
-      <img src="images/logo.png" alt="" class="logo" />
+      <a href="navbar-brand">
+        <img src="images/logo.png" alt="" class="logo"
+      /></a>
 
       <nav class="col-4">
         <ul>
@@ -23,12 +25,22 @@
           <li>Напитки</li>
         </ul>
       </nav>
-      <div class="phone-cart-wrapper col-4">
+
+      <div class="phone-cart-wrapper col-md-4">
         <div class="phone-numbers">
           <a href="tel:+77078524546">8 (707)852 45 46</a>
           <a href="tel:+77078524546">8 (707)852 45 46</a>
         </div>
 
+        <div class="phone-numbers-mobile-wrapper">
+          <div class="phone-numbers-mobile">
+            <a href="tel:+77078524546">8 (707)852 45 46</a>
+            <img src="img/up-arrow.png" class="phone-dropdown-icon" />
+          </div>
+          <a href="tel:+77078524546" class="phone-secondary"
+            >8 (707)852 45 46</a
+          >
+        </div>
         <a href="cart.html">
           <img src="img/cart.png" alt="Иконка корзины" height="100%"
         /></a>
@@ -184,7 +196,6 @@
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
@@ -200,6 +211,6 @@
       </div>
       <span class="sign">Made on Earth for Humans</span>
     </footer>
-    <script src="js/app.min.js"></script>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>
