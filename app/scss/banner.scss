@@ -2,6 +2,7 @@
   background-image: url(../img/banner.png);
   background-position: right center;
   background-repeat: no-repeat;
+  background-size: contain;
   height: 660px;
   display: flex;
   div {
@@ -17,5 +18,11 @@
       align-self: center;
       padding-left: 50px;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 460px;
   }
 }

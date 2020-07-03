@@ -35,6 +35,12 @@
   }
 }
 
+@media(max-width:691px){
+  .large-cards-wrapper{
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .small-cards-wrapper {
     display: grid;

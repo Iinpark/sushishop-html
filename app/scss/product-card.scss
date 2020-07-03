@@ -74,3 +74,51 @@
     }
   }
 }
+
+@media (max-width: 425px) {
+  .product-card-small {
+    gap: 5px;
+    h2 {
+      line-height: 0.7;
+      margin: 0;
+      font-weight: 400;
+    }
+    .price-quantity-wrap {
+      span {
+        font-size: 1.2em;
+      }
+      input[value] {
+        // font-size: 1.2em;
+        color: $red;
+      }
+      input {
+        border: none;
+        padding: 0px 10px;
+        background-color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .product-card-small {
+    h2 {
+      line-height: 0.7;
+      margin: 0;
+    }
+    .price-quantity-wrap {
+      span {
+        font-size: 1.2em;
+      }
+      input[value] {
+        // font-size: 1.2em;
+        color: $red;
+      }
+      input {
+        border: none;
+        padding: 0px 5px;
+        background-color: white;
+      }
+    }
+  }
+}
