@@ -5,19 +5,52 @@ footer {
   height: 160px;
   background: $red;
   color: white;
+  h3{
+    display: none;
+  }
 }
 
-.footer-wrapper {
+.phone-numbers__footer {
+  display: grid;
+  align-self: center;
+  a {
+    display: block;
+    color: white;
+  }
+  // display: none;
+}
+
+.contacts-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-width: 400px;
+  padding-left: 30px;
   address {
     display: flex;
     align-items: center;
   }
 }
 .sign {
-  // height: 20px;
   font-family: Consolas, monospace;
   align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+  footer {
+    font-size: 0.7em ;
+    h3{
+      display: block;
+    }
+  }
+  .contacts-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    min-width: unset;
+    padding-left: 15px;
+    align-items: flex-start;
+  }
+  .phone-numbers__footer {
+    align-self: flex-start;
+  }
 }

@@ -24,6 +24,10 @@
     align-items: center;
     span {
       font-size: 1.5rem;
+      color: $red;
+    }
+    span.price {
+      color: black;
     }
     input[value] {
       font-size: 2rem;
@@ -62,6 +66,10 @@
     align-items: center;
     span {
       font-size: 1.5em;
+      color: $red;
+    }
+    span.price {
+      color: black;
     }
     input[value] {
       font-size: 2em;
@@ -111,7 +119,7 @@
         font-size: 1.2em;
       }
       input[value] {
-        // font-size: 1.2em;
+        font-size: 1.2em;
         color: $red;
       }
       input {
