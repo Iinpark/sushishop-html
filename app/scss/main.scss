@@ -6,12 +6,14 @@
 @import 'fonts';
 @import 'cart';
 @import 'banner';
+@import 'menu';
 
 .main-container {
   margin: auto;
 }
 .background-wrapper {
   background-image: url(../img/main-background.png);
+  background-size: cover;
 }
 .large-cards-wrapper {
   display: grid;
@@ -35,8 +37,8 @@
   }
 }
 
-@media(max-width:691px){
-  .large-cards-wrapper{
+@media (max-width: 691px) {
+  .large-cards-wrapper {
     display: none;
   }
 }
@@ -45,6 +47,5 @@
   .small-cards-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    //grid-auto-columns: repeat(auto-fit, 1fr);
   }
 }
