@@ -9,6 +9,7 @@
     display: grid;
     align-items: center;
     justify-self: center;
+    margin: auto;
     h1 {
       font-family: $Freehand, sans-serif;
       color: $red;
@@ -16,7 +17,7 @@
       line-height: 0.9;
       display: inline-block;
       align-self: center;
-      padding-left: 50px;
+      //padding-left: 50px;
     }
   }
 }

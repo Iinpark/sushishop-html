@@ -1,5 +1,5 @@
 header {
-  height: 110px;
+  height: 80px;
   background-color: $red;
   width: 100%;
   color: white;
@@ -36,6 +36,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 300px;
 }
 
 .phone-numbers {
@@ -98,11 +99,9 @@ header {
       padding-right: 3px;
     }
   }
-
   .logo {
     display: none;
   }
-
   nav {
     display: none;
   }
@@ -133,5 +132,15 @@ header {
     .phone-dropdown-icon {
       width: 30px;
     }
+  }
+  .phone-cart-wrapper{
+     max-width: 200px;
+  }
+}
+
+@media (max-width: 375px) {
+  .phone-cart-wrapper {
+    margin: 0;
+    padding: 0;
   }
 }
