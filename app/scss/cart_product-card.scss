@@ -8,21 +8,32 @@ $product-item__mobile-gradient: linear-gradient(
 
 .cart_mobile__wrapper {
   position: relative;
- // max-width: 768px;
+  // max-width: 768px;
   min-height: 100%;
 }
+
+// корзина с кнопками, ценой корзины и карточками продукта
 .cart_mobile {
   padding-bottom: 165px;
-  //display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+// обертка блока с карточками продуктов
+.cart_mobile__product-items {
+  margin: 10px auto;
+  padding: 10px 0;
+}
+// название продукта
 .product-item_mobile__product-title {
   height: 50%;
   width: 100%;
   font-family: $Freehand, sans-serif;
   color: $red;
-  @include rfs(48px);
+  @include rfs(72px);
 }
 
+// карточка продукта
 .product-item_mobile {
   height: 240px;
   margin: 10px;
@@ -31,6 +42,7 @@ $product-item__mobile-gradient: linear-gradient(
   grid-auto-flow: column;
   align-items: center;
   grid-template-columns: repeat(2, minmax(150px, 1fr));
+  background-color: white;
   img {
     height: 100%;
     object-fit: contain;
@@ -75,6 +87,35 @@ $product-item__mobile-gradient: linear-gradient(
   }
 }
 
+// общая цена корзины
+.cart_mobile__price {
+  margin: 0 auto;
+  margin-top: 25px;
+  border-top: 2px solid $red;
+  border-bottom: 2px solid $red;
+  width: 75%;
+  text-align: center;
+  p {
+    margin: 0;
+    @include rfs(48px);
+  }
+}
+
+// кнопка подтверждения заказа
+.cart_mobile__do-checkout {
+  width: 90%;
+  height: 40px;
+  margin: 30px 0;
+  padding: 5px;
+  border: none;
+  background-color: black;
+  background: center center no-repeat;
+  background-image: url('../img/button_bg.png');
+  background-size: contain;
+  height: 80px;
+  color: white;
+}
+
 @media (max-width: 563px) {
   .product-item_mobile {
     height: 180px;
@@ -82,7 +123,6 @@ $product-item__mobile-gradient: linear-gradient(
       background: $product-item__mobile-gradient;
 
       h2 {
-        line-height: 0.8;
         @include rfs(72px);
       }
     }
@@ -101,8 +141,16 @@ $product-item__mobile-gradient: linear-gradient(
   }
 }
 
- @media (max-width: 375px) {
-   .product-item_mobile {
-     height: 120px
-   }
- }
+@media (max-width: 375px) {
+  .product-item_mobile {
+    height: 120px;
+    .item-information {
+      background: $product-item__mobile-gradient;
+
+      h2 {
+        line-height: 0.8;
+        font-size: 35px;
+      }
+    }
+  }
+}
