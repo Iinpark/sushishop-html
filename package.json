@@ -24,6 +24,7 @@
 		"gulp-uglify": "^3.0.2"
 	},
 	"dependencies": {
-		"bootstrap": "^4.5.0"
+		"bootstrap": "^4.5.0",
+		"rfs": "^9.0.3"
 	}
 }

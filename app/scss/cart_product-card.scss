@@ -1,0 +1,108 @@
+@import '../../node_modules/rfs/scss';
+
+$product-item__mobile-gradient: linear-gradient(
+  to right,
+  rgba(255, 255, 255, 0) 0%,
+  rgba(255, 255, 255, 1) 27%
+); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+.cart_mobile__wrapper {
+  position: relative;
+ // max-width: 768px;
+  min-height: 100%;
+}
+.cart_mobile {
+  padding-bottom: 165px;
+  //display: flex;
+}
+.product-item_mobile__product-title {
+  height: 50%;
+  width: 100%;
+  font-family: $Freehand, sans-serif;
+  color: $red;
+  @include rfs(48px);
+}
+
+.product-item_mobile {
+  height: 240px;
+  margin: 10px;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  img {
+    height: 100%;
+    object-fit: contain;
+  }
+  .item-information {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 0px;
+    height: 100%;
+  }
+
+  .controls {
+    span {
+      color: $red;
+    }
+  }
+
+  .price-and-controls_mobile {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    span {
+      @include rfs(24px);
+    }
+    input[value] {
+      @include rfs(32px);
+      color: $red;
+      text-align: center;
+      line-height: 1;
+    }
+    input {
+      border: none;
+      margin: 10px;
+      height: 50px;
+      width: 50px;
+      background-color: white;
+    }
+  }
+}
+
+@media (max-width: 563px) {
+  .product-item_mobile {
+    height: 180px;
+    .item-information {
+      background: $product-item__mobile-gradient;
+
+      h2 {
+        line-height: 0.8;
+        @include rfs(72px);
+      }
+    }
+    .price-and-controls_mobile {
+      .controls {
+        display: flex;
+        align-items: center;
+        input {
+          margin: 0px;
+          padding: 0 5px;
+          height: 30px;
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+
+ @media (max-width: 375px) {
+   .product-item_mobile {
+     height: 120px
+   }
+ }

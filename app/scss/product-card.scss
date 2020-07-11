@@ -42,10 +42,7 @@
 }
 
 .product-card-small {
-  //height: 375px;
-  //width: 16vw;
   display: grid;
-  //margin: 10px auto;
   grid-auto-flow: row;
   background-color: #fff;
   box-shadow: 0px 4px 9px 2px rgba(0, 0, 0, 0.27);
@@ -102,7 +99,7 @@
       input {
         border: none;
         padding: 0px 10px;
-        background-color: white;
+     //   background-color: white;
       }
     }
   }
@@ -125,7 +122,7 @@
       input {
         border: none;
         padding: 0px 5px;
-        background-color: white;
+//background-color: white;
       }
     }
   }
